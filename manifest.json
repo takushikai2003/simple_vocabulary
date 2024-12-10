@@ -1,0 +1,21 @@
+{
+    "name": "シンプル単語帳",
+    "description": "コンテキストメニューから操作するシンプルな単語帳です。文字列が選択されているときはその文字列が、されていないときはそのページのURLが記録されます。",
+    "version": "0.1",
+    "permissions": ["storage","tabs","contextMenus","scripting"],
+    "manifest_version": 3,
+    "icons": {
+        "16": "images/ico16x16.png",
+        "48": "images/ico48x48.png",
+        "128": "images/ico128x128.png"
+    },
+    "action": {
+        "default_title": "シンプル単語帳",
+        "default_icon": "images/ico48x48.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": ["http://*/*", "https://*/*"]
+}
